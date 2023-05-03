@@ -1,0 +1,255 @@
+html{
+  scroll-behavior: smooth;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    background-color: #fff;
+  }
+  
+  header div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2.5vw;
+    margin: 2.5vh;
+  }
+  
+  header div img {
+    height: 4vh;
+    border-radius: 1vh;
+  }
+  
+  header h1 {
+    font-size: 2.5vh;
+    text-align: right;
+    margin: 0 1vw;
+  }
+  
+/**/
+
+
+/**/
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+
+h1{
+  color: var(--black);
+  margin-top: -30px;
+  text-align: center;
+}
+
+h2{
+  margin-right: 40%;
+  padding-left: 4%;
+  color: var(--black);
+}
+
+p{
+  margin-right: 40%;
+  padding-left: 4%;
+}
+
+header label{
+  display: none;
+  border-right: 1px solid white;
+}
+
+header label:hover{
+  cursor: pointer;
+  background: rgba(0,0,0,0.3);
+}
+
+.acerca{
+  text-align: right;
+  margin-left: auto;
+}
+
+.iconoMenu{
+  width: 30px;
+}
+
+#btn-menu{
+  display: none;
+}
+
+.menu ul{
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.menu li{
+  flex-grow: 0.01;
+}
+
+.menu li:hover{
+  background: rgba(0,0,0,0.3);
+}
+
+.menu li a{
+  display: flex;
+  padding: 15px 20px;
+  text-decoration: none;
+  color: black;
+}
+
+.main{
+  text-align: center;
+}
+
+/*Square*/
+
+.container{
+  display: flex;
+  position: relative;
+}
+
+.container_nameProgrammer{
+  display: flex;
+  position: relative;
+}
+
+.square{
+  position: absolute;
+  margin-left: 0.1%;
+  width: 50vw;
+  height: 100%;
+  background-color: rgb(242, 232, 209);
+  z-index: 1;
+
+}
+
+.square1{
+  position: relative;
+  margin: 10% 0% 10% 32%;
+  width: 25vw;
+  height: 30vw;
+  background-color: rgb(201, 202, 204);
+  z-index: 2;
+}
+
+.circle{
+  position: relative;
+  margin: 13% -17%;
+  width: 12vw;
+  height: 12vw;
+  z-index: 2;
+  border-radius: 100%;
+}
+
+.Circle_name{
+  position: absolute;
+  margin: -23% 41.7%;
+  z-index: 3;
+}
+
+.Circle_Programmer{
+  position: absolute;
+  margin: -20% 42.5%;
+  z-index: 3;
+}
+/**/
+
+@media (max-width: 768px) {
+  
+  header{
+    position: fixed;
+    z-index: 1;
+    padding: 0%;
+  }
+
+  h2{
+    margin-right: 27%;
+    padding-left: 4%;
+    color: var(--black);
+    margin: auto;
+  }
+  
+  p{
+    margin-right: 27%;
+    padding-left: 4%;
+  }
+
+  header label{
+    display: block;
+    width: 25px;
+    height: 25px;
+    margin-top: 1px;
+    margin-left: 1px;
+    padding: 1px 7px 5px 2px;
+    border-radius: 10%;
+    background: rgba(62, 62, 62, 0.5);
+  }
+
+  .first-section{
+    display: inline-block;
+    margin-right: auto;
+    padding-left: 10px;
+  }
+
+  .second-section{
+    display: inline-block;
+    margin-right: auto;
+    padding-left: 10px;
+  }
+
+  .name{
+    position: fixed;
+    background: rgba(0,0,0, 0.5);
+    width: 100%;
+    margin-left: -100%;
+  }
+
+  .square{
+    position: fixed;
+    background: rgba(0,0,0, 0.5);
+    width: 100%;
+    margin-left: -100%;
+  }
+
+  .square1{
+    position: fixed;
+    background: rgba(0,0,0, 0.5);
+    width: 100%;
+    margin-left: -100%;
+  }
+
+  .circle{
+    position: fixed;
+    background: rgba(0,0,0, 0.5);
+    width: 100%;
+    margin-left: -100%;
+  }
+
+  .menu{
+    position: fixed;
+    background: rgba(0,0,0, 0.5);
+    width: 100%;
+    margin-left: -100%;
+  }
+
+  .menu ul{
+    flex-direction: column;
+  }
+
+  .menu li{
+    border-top: 1px solid rgb(0,0,0,0.1);
+  }
+
+  .menu li a{
+    font-weight: bolder;
+    color: var(--white);
+  }
+
+  #btn-menu:checked ~ .menu{
+      margin: 0;
+  }
+}
