@@ -9,6 +9,7 @@ header {
     align-items: center;
     height: 10vh;
     background-color: #fff;
+    font-family: 'Bruno Ace SC', cursive;
   }
   
   header div {
@@ -25,9 +26,9 @@ header {
   }
   
   header h1 {
-    font-size: 2.5vh;
+    font-size: 3vh;
     text-align: right;
-    margin: 0 1vw;
+    margin: 0 3vw;
   }
   
 /**/
@@ -35,13 +36,12 @@ header {
 
 /**/
 body {
-  font-family: 'Roboto', sans-serif;
   margin: 0;
 }
 
 h1{
   color: var(--black);
-  margin-top: -30px;
+  margin-top: 46.8vw;
   text-align: center;
 }
 
@@ -129,16 +129,25 @@ header label:hover{
 
 .square1{
   position: relative;
-  margin: 10% 0% 10% 32%;
+  margin: 4% 0% 10% 32%;
   width: 25vw;
   height: 30vw;
   background-color: rgb(201, 202, 204);
   z-index: 2;
 }
 
+.Square_Name{
+  position: absolute;
+  padding: 0%;
+  width: 1vw;
+  height: 1vw;
+  background-color: rgb(25, 50, 100);
+  z-index: 2;
+}
+
 .circle{
   position: relative;
-  margin: 13% -17%;
+  margin: 8% -18.5%;
   width: 12vw;
   height: 12vw;
   z-index: 2;
@@ -147,15 +156,57 @@ header label:hover{
 
 .Circle_name{
   position: absolute;
-  margin: -23% 41.7%;
+  margin: -21.5% 41.7%;
   z-index: 3;
 }
 
 .Circle_Programmer{
   position: absolute;
-  margin: -20% 42.5%;
+  margin: -19% 42.5%;
   z-index: 3;
 }
+
+.container_index{
+  margin: -39% 60%;
+}
+
+.Greeting{
+  font-family: 'Alfa Slab One', cursive;
+  position: absolute;
+  
+  font-size: 650%;
+}
+
+
+.paragraph{
+  font-family: 'Alfa Slab One', cursive;
+  position: absolute;
+  bottom: 50%;
+  right: -22vw; 
+  font-size: 130%;
+}
+
+@media (max-width: 1528px){
+  .paragraph{
+    font-family: 'Alfa Slab One', cursive;
+    position: absolute;
+    bottom: 54%;
+    right: -22vw; 
+    font-size: 130%;
+  }
+}
+
+@media (max-width: 1223px){
+  .paragraph{
+    font-family: 'Alfa Slab One', cursive;
+    position: absolute;
+    bottom: 54%;
+    right: -29vw; 
+    font-size: 130%;
+  }
+}
+
+
 /**/
 
 @media (max-width: 768px) {
@@ -202,6 +253,7 @@ header label:hover{
   }
 
   .name{
+    font-family: Helvetica;
     position: fixed;
     background: rgba(0,0,0, 0.5);
     width: 100%;
