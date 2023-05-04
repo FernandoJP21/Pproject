@@ -173,7 +173,6 @@ header label:hover{
 .Greeting{
   font-family: 'Alfa Slab One', cursive;
   position: absolute;
-  
   font-size: 650%;
 }
 
@@ -184,6 +183,27 @@ header label:hover{
   bottom: 50%;
   right: -22vw; 
   font-size: 130%;
+}
+
+.FP_HV{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  position: absolute;
+  padding: 0.5% 0.5%;
+  text-align: center;
+  background-color: rgb(60, 111, 214);
+  border-radius: 5%;
+  color: white;
+  z-index: 2;
+  top: 25vw;
+  text-decoration: none;
+}
+
+.FP_HV:hover{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  cursor: pointer;
+  color: black;
+  background: rgba(138, 137, 137, 0.1);
+  border: 1px solid rgb(60, 111, 214);
 }
 
 @media (max-width: 1528px){
@@ -279,6 +299,7 @@ header label:hover{
     background: rgba(0,0,0, 0.5);
     width: 100%;
     margin-left: -100%;
+    z-index: 3;
   }
 
   .menu{
